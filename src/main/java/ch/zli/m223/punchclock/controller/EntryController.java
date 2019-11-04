@@ -1,5 +1,6 @@
 package ch.zli.m223.punchclock.controller;
 
+import ch.zli.m223.punchclock.domain.CheckOutBeforeCheckinException;
 import ch.zli.m223.punchclock.domain.Entry;
 import ch.zli.m223.punchclock.service.EntryService;
 import org.springframework.http.HttpStatus;
@@ -26,6 +27,26 @@ public class EntryController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Entry createEntry(@Valid @RequestBody Entry entry) {
-        return entryService.createEntry(entry);
+        Entry createdEntry = entryService.createEntry(entry);
+        if (createdEntry != null) {
+            return entry;
+        }
+        throw new CheckOutBeforeCheckinException();
+    }
+
+    @PutMapping
+    @ResponseStatus(HttpStatus.OK)
+    public Entry updateEntry(@Valid @RequestBody Entry entry) {
+        Entry updatedEntry = entryService.updateEntry(entry);
+        if (updatedEntry != null) {
+            return updatedEntry;
+        }
+        throw new CheckOutBeforeCheckinException();
+    }
+
+    @DeleteMapping
+    @ResponseStatus(HttpStatus.OK)
+    public void deleteEntry(@Valid @RequestBody Long id) {
+        entryService.deleteEntryById(id);
     }
 }
