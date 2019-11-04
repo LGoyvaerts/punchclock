@@ -1,5 +1,5 @@
 # M223: Punchclock
-Dies ist eine Beispielapplikation für das Modul M223.
+Dies ist das Abschlussprojekt des überbetrielbichen Kurses Modul 223.
 
 ## Loslegen
 Folgende Schritte befolgen um loszulegen:
