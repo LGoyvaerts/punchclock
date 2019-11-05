@@ -1,28 +1,31 @@
 package ch.zli.m223.punchclock.controller;
 
-import ch.zli.m223.punchclock.domain.User;
-import ch.zli.m223.punchclock.repository.UserRepository;
+import ch.zli.m223.punchclock.domain.ApplicationUser;
+import ch.zli.m223.punchclock.repository.ApplicationUserRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
 
-    private UserRepository userRepository;
+    private ApplicationUserRepository applicationUserRepository;
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    public UserController(UserRepository userRepository, BCryptPasswordEncoder bCryptPasswordEncoder) {
-        this.userRepository = userRepository;
+    public UserController(ApplicationUserRepository applicationUserRepository, BCryptPasswordEncoder bCryptPasswordEncoder) {
+        this.applicationUserRepository = applicationUserRepository;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
 
-    @PostMapping("/sign-up")
-    public void signUp(@RequestBody User user) {
-        user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        userRepository.save(user);
+    @GetMapping("/signup")
+    public String showForm() {
+        return "signup";
+    }
+
+    @PostMapping("/signup")
+    public ApplicationUser signUp(@RequestBody ApplicationUser applicationUser) {
+        applicationUser.setPassword(bCryptPasswordEncoder.encode(applicationUser.getPassword()));
+        applicationUserRepository.save(applicationUser);
+        return applicationUser;
     }
 }
