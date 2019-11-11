@@ -22,6 +22,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return applicationUserRepository.saveAndFlush(new ApplicationUser(username, password));
     }
 
+    // Used to get ApplicationUser from repository
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         ApplicationUser applicationUser = applicationUserRepository.findByUsername(username);

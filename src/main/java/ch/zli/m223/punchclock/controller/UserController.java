@@ -17,11 +17,8 @@ public class UserController {
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
 
-    @GetMapping("/signup")
-    public String showForm() {
-        return "signup";
-    }
 
+    // Path to sign up
     @PostMapping("/signup")
     public ApplicationUser signUp(@RequestBody ApplicationUser applicationUser) {
         applicationUser.setPassword(bCryptPasswordEncoder.encode(applicationUser.getPassword()));
