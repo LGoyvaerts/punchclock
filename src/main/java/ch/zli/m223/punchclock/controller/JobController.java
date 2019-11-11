@@ -13,6 +13,7 @@ import java.util.List;
 public class JobController {
     private JobService jobService;
 
+    // Constructor for Injection
     public JobController(JobService jobService) {
         this.jobService = jobService;
     }
@@ -24,7 +25,8 @@ public class JobController {
         return jobService.findAll();
     }
 
+    // Create Job
     public Job createJob(@Valid @RequestBody Job job) {
-        return jobService.createCategory(job);
+        return jobService.createJob(job);
     }
 }

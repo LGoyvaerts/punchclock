@@ -11,6 +11,7 @@ import java.util.Optional;
 public class EntryService {
     private EntryRepository entryRepository;
 
+    // Constructor for Injection
     public EntryService(EntryRepository entryRepository) {
         this.entryRepository = entryRepository;
     }
