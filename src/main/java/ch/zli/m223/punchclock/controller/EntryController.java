@@ -14,6 +14,7 @@ import java.util.List;
 public class EntryController {
     private EntryService entryService;
 
+    // Constructor for Injection
     public EntryController(EntryService entryService) {
         this.entryService = entryService;
     }

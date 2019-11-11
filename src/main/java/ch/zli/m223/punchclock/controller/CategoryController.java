@@ -14,18 +14,26 @@ import java.util.List;
 public class CategoryController {
     private CategoryService categoryService;
 
+    // Constructor for Injection
     public CategoryController(CategoryService categoryService) {
         this.categoryService = categoryService;
     }
 
-    // Create Category
+    // Get all Categories
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<Category> getAllEntries() {
         return categoryService.findAll();
     }
 
+    // Create Category
     public Category createCategory(@Valid @RequestBody Category category){
         return categoryService.createCategory(category);
+    }
+
+    //Delete Category
+    @RequestMapping(value = "/{id}", method = RequestMethod.POST)
+    public void deleteCategoryById(@Valid @PathVariable(value = "id") Long id){
+        categoryService.deleteCategoryById(id);
     }
 }

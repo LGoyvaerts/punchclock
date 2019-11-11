@@ -11,11 +11,20 @@ public class CategoryService {
 
     private CategoryRepository categoryRepository;
 
-    public Category createCategory(Category category){
+    // Constructor for Injection
+    public CategoryService(CategoryRepository categoryRepository) {
+        this.categoryRepository = categoryRepository;
+    }
+
+    public Category createCategory(Category category) {
         return categoryRepository.saveAndFlush(category);
     }
 
-    public List<Category> findAll(){
+    public void deleteCategoryById(Long id) {
+        categoryRepository.deleteById(id);
+    }
+
+    public List<Category> findAll() {
         return categoryRepository.findAll();
     }
 }

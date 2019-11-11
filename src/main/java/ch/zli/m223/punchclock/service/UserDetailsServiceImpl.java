@@ -14,6 +14,7 @@ import static java.util.Collections.emptyList;
 public class UserDetailsServiceImpl implements UserDetailsService {
     private ApplicationUserRepository applicationUserRepository;
 
+    // Constructor for Injection
     public UserDetailsServiceImpl(ApplicationUserRepository applicationUserRepository) {
         this.applicationUserRepository = applicationUserRepository;
     }

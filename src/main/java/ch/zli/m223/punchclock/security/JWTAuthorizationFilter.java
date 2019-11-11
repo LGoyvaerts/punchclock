@@ -18,6 +18,7 @@ import static ch.zli.m223.punchclock.security.SecurityConstants.*;
 
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
 
+    // Constructor for Injection
     public JWTAuthorizationFilter(AuthenticationManager authManager) {
         super(authManager);
     }
