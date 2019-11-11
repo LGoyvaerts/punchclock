@@ -1,0 +1,145 @@
+commit aa67ff69de4ac3ed013d100dd72779f7f0b2cbc8
+Merge: cd6f187 712e97e
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 06:01:16 2019 -0800
+
+    Merge branch 'feature/ui'
+
+commit 712e97ec8c062c5a4fb9e7aae4a813cae012a65e
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 05:25:03 2019 -0800
+
+    Added example script file
+
+commit b41f8741ed7d1f1fca9816c85ea8a98366c53d5e
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 05:18:06 2019 -0800
+
+    Added JPQL-Request
+
+commit 18569107f565df403f35d37e09aa00b9ed0f2192
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 05:07:50 2019 -0800
+
+    Modified README.md
+
+commit 444a7021296b38f79b750177b3f74cffabe3162e
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 05:05:56 2019 -0800
+
+    Modified README.md and added table cell
+
+commit 96d9c6f2fa9a3d57c5bbd8edf7bbdb5fc5b9b37d
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 04:51:15 2019 -0800
+
+    Refactored code for better legibility
+
+commit cd6f1872f537c7c0812d54994ce39e3121ffe734
+Merge: fb59049 0489468
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 03:45:54 2019 -0800
+
+    Merge branch 'feature/jwt'
+
+commit 0489468539c0414e6b44b41b6a47af00fe094716
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 02:45:33 2019 -0800
+
+    Implemented job handling
+
+commit cfd77e812957df585bf2a44363258b10c64f0493
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 02:41:40 2019 -0800
+
+    Implemented category handling
+
+commit b6984d1f3ee9e7cd070b3e34701680e9d6f10b28
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 02:32:06 2019 -0800
+
+    Implemented all entities
+
+commit b206a1e34baa4a40f7090f0ce2f57aaf4d1beda6
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 01:44:05 2019 -0800
+
+    Added default Constructor to ApplicationUser
+
+commit 1b76dc2c6743d5984adb88c16fb984e1b209406e
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 01:40:38 2019 -0800
+
+    Removed formLogin page
+
+commit 02e48846a9cf88288ee765e908a918f854c145ad
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 01:39:08 2019 -0800
+
+    Added comments for better legibility
+
+commit e86665a454660ef8ea0697a4ae3fa674558f7951
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Tue Nov 5 05:23:25 2019 -0800
+
+    Implemented JWT-Authentication and -Authorization with Spring
+
+commit 81b7d350a002c24ec5f5e3486e39983461b92b13
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 4 05:21:46 2019 -0800
+
+    Added JWT authorization filter
+
+commit 073d4c69455df9f82891571bcfb6da6f10b22575
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 4 05:19:25 2019 -0800
+
+    Added JWT authenticatin filter and securityconstants class. Implemented its dependencies in gradle.build file
+
+commit 342c4f217205c5fcdaae4d7afd6bb0b655ecd184
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 4 05:06:10 2019 -0800
+
+    Added bCryptPasswordEncoder injectibility
+
+commit 87d34f72ae4657837846b5d7a438d1a0957193e8
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 4 05:01:28 2019 -0800
+
+    Added spring starter security dependency
+
+commit 9beba7b22565332d959584d016e348e04ba9e784
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 4 04:57:36 2019 -0800
+
+    Added finder
+
+commit f809b872fcf958283672c12f93dd39b2492a119d
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 4 04:56:45 2019 -0800
+
+    Added User entity class and UserRepository
+
+commit fb5904921f017cbfb8505013b195961f5c951f66
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 4 04:19:24 2019 -0800
+
+    Changed README.md
+
+commit 8fb866ce949b40a0f48e1dddbd8f4200f6898589
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 4 04:04:23 2019 -0800
+
+    Checking if checkOut is before checkIn and handling it in Controller
+
+commit 721ba7e0b0553c22e6adbee8a534d28bf34e9c86
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 4 03:59:09 2019 -0800
+
+    Added checkout-timing-exception
+
+commit ab2356b98e37c028968a2cb15afe1ef6f329b09f
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 4 03:52:31 2019 -0800
+
+    Initial commit
