@@ -16,6 +16,9 @@ public class ApplicationUser {
 
     private String password;
 
+    public ApplicationUser() {
+    }
+
     public ApplicationUser(String username, String password) {
         this.username = username;
         this.password = password;
