@@ -1,3 +1,15 @@
+commit 9017b1a263e02a08cee7c8046ca98a64fe3fdc6a
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 06:49:29 2019 -0800
+
+    Changed README.md
+
+commit 558e24a0561d8d37c125b1f10c63b8aad2c6f962
+Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
+Date:   Mon Nov 11 06:11:06 2019 -0800
+
+    Added git-history file for teacher
+
 commit aa67ff69de4ac3ed013d100dd72779f7f0b2cbc8
 Merge: cd6f187 712e97e
 Author: LGoyvaerts <lorris.goyvaerts@ti8m.ch>
