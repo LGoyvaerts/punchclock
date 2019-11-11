@@ -24,6 +24,10 @@ public class CategoryService {
         categoryRepository.deleteById(id);
     }
 
+    public Category findFirstCategory() {
+        return categoryRepository.findFirstCategory();
+    }
+
     public List<Category> findAll() {
         return categoryRepository.findAll();
     }
