@@ -12,4 +12,4 @@ Folgende Dienste stehen während der Ausführung im Profil `dev` zur Verfügung:
 - REST-Schnittstelle der Applikation: http://localhost:8081
 - Dashboard der H2 Datenbank: http://localhost:8081/h2-console
 
-Folgender Pfad ist ohne abgeschlossene Authentifizierung: http://localhost:8081/login.html
+Folgender Pfad ist ohne abgeschlossene Authentifizierung erreichbar: http://localhost:8081/login.html
