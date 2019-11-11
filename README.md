@@ -13,3 +13,12 @@ Folgende Dienste stehen während der Ausführung im Profil `dev` zur Verfügung:
 - Dashboard der H2 Datenbank: http://localhost:8081/h2-console
 
 Folgender Pfad ist ohne abgeschlossene Authentifizierung erreichbar: http://localhost:8081/login.html
+
+## Funktionalität
+Folgende Funktionalität wird angeboten:
+
+- Zeiterfassungstool
+- Kategorieverwaltung
+- Jobverwaltung
+- Nutzerverwaltung
+- JWT mit Spring
